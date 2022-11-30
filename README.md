@@ -1,5 +1,6 @@
-# Mini-Project
+# MINI-PROJECT
 
+## DESCRIPTION OF THE PROJECT
 The dataset is about life expectancy, health factors for 193 countries from the  WHO data repository website and its corresponding economic data. 
 
 Among all categories of health-related factors only those critical factors were chosen which are more representative.
@@ -166,14 +167,14 @@ df.hist(bins=50, figsize=(20,15))
 
 plt.show()
 
-# plotting correlation heatmap
+plotting correlation heatmap
 
 plt.figure(figsize= (12,12)) 
 
 dataplot = sns.heatmap(df.corr(), cmap="YlGnBu", annot=True)
 
   
-# displaying heatmap
+displaying heatmap
 
 plt.savefig('plot1.eps')
 
@@ -188,12 +189,9 @@ country_data = px.data.gapminder()
 
 country_data.tail()
 
-map_fig = px.scatter_geo(country_data,locations = 'iso_alpha', projection = 'orthographic', ![Screenshot (299)](https://user-images.githubusercontent.com/86832944/204754596-bb936b66-c37c-43e8-9d7f-52c87a8ff139.png)
+map_fig = px.scatter_geo(country_data,locations = 'iso_alpha', projection = 'orthographic'
 
-                         opacity = 0.8, color = 'country', hover_name = 'country', 
-                         hover_data = ['lifeExp', 'year'],template = 'gridon',title = '<b>Life Expectancy over the World Map')
-map_fig.show()
-
+                        
 ### SCREENSHOTS OF OUTPUT
 
 
@@ -246,10 +244,7 @@ map_fig.show()
 
 ![image](https://user-images.githubusercontent.com/86832944/204753914-0be25b19-68bf-4343-9389-065a086a374f.png)
 
-![image](https://user-images.githubusercontent.com/86832944/204754063-fae854a5-66e0-4bb9-b79f-24574d6af6de.png)
-
- 
-
+![Screenshot (299)](https://user-images.githubusercontent.com/86832944/204754596-bb936b66-c37c-43e8-9d7f-52c87a8ff139.png)
 
 
 
